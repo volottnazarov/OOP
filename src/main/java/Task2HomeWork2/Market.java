@@ -3,6 +3,8 @@ package Task2HomeWork2;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.swing.UIManager.get;
+
 public class Market implements MarketBehaviour, QueueBehaviour{
 
     private List<Actor> queue = new ArrayList<>();
@@ -62,9 +64,13 @@ public class Market implements MarketBehaviour, QueueBehaviour{
         for (Actor actor : queue) {
             if (actor.isTakeOrder()) {
                 releasedActor.add(actor);
+                String temp = actor.getName();
                 System.out.println(actor.getName() + " вышел из очереди");
             }
         }
+        System.out.println("Свободная касса :) ");
         releaseFromMarket(releasedActor);
     }
+
+
 }

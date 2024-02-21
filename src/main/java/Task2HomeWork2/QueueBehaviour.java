@@ -6,4 +6,5 @@ public interface QueueBehaviour {
     void giveOrders();
     void releaseFromQueue();
 
+
 }
