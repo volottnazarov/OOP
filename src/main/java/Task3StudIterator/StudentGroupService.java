@@ -1,5 +1,8 @@
 package Task3StudIterator;
 
+import Task4Generic.User;
+import Task4Generic.UserComparator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
